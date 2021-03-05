@@ -32,6 +32,14 @@ header .title{
     justify-content: space-between;
 }
 
+.select-all{
+    margin: 10px;
+}
+
+.select-all label{
+    margin-left: 10px;
+}
+
 body {
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4em;

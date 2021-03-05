@@ -12,9 +12,16 @@
 
 
     </header>
-    <input type="checkbox" class="toggle" v-model="allDone">
+    <div class="select-all">
+
+      <input type="checkbox" class="toggle" v-model="allDone">
+      <label>Cocher toutes les tâches</label>
+
+    </div>
+
 
     <TodoList v-on:deleteTodo="deleteTodo($event)" :filteredTodo="filteredTodo"></TodoList>
+
     <button class="clear-completed" v-show="completed" @click.prevent="deleteCompleted">Supprimer les tâches finies</button>
 
     <footer class="footer" v-show="hasTodo">
